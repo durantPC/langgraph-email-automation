@@ -1,0 +1,960 @@
+// 全局样式变量 - 浅色主题（默认）
+:root,
+.theme-light {
+  --primary-color: #409eff;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+  
+  --bg-color: #f5f7fa;
+  --card-bg: #ffffff;
+  --sidebar-bg: #304156;
+  --sidebar-active-bg: #1890ff;
+  --header-bg: #ffffff;
+  
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-disabled: #c0c4cc;
+  
+  --border-color: #dcdfe6;
+  --border-color-light: #e4e7ed;
+  --border-radius: 4px;
+  
+  --header-height: 60px;
+  --sidebar-width: 220px;
+  --sidebar-collapsed-width: 64px;
+  
+  --shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+// 深色主题 - 现代化配色方案
+.theme-dark {
+  --primary-color: #5b9eff;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+  
+  // 使用柔和的深色背景，避免纯黑色
+  --bg-color: #1a1d29;  // 深蓝灰色背景
+  --card-bg: #252936;    // 卡片背景，稍微亮一点
+  --sidebar-bg: #1e212e; // 侧边栏背景
+  --sidebar-active-bg: #409eff; // 激活项背景
+  --header-bg: #252936;  // 头部背景
+  
+  // 柔和的文字颜色（提高对比度，确保清晰可读）
+  --text-primary: #f0f2f5;  // 主要文字，更亮的白色（提高对比度）
+  --text-regular: #d1d5db;  // 常规文字（提高对比度）
+  --text-secondary: #b0b5ba; // 次要文字（提高对比度）
+  --text-disabled: #6c6e72;  // 禁用文字
+  
+  // 柔和的边框颜色
+  --border-color: #3c4043;   // 边框颜色
+  --border-color-light: #2d3136; // 浅边框
+  --border-radius: 4px;
+  
+  --header-height: 60px;
+  --sidebar-width: 220px;
+  --sidebar-collapsed-width: 64px;
+  
+  // 更柔和的阴影
+  --shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+// 全局重置
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 3px;
+  
+  &:hover {
+    background-color: #a8a8a8;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+// 深色主题下的滚动条
+.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: #5f6368;
+  border-radius: 3px;
+  
+  &:hover {
+    background-color: #80868b;
+  }
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background-color: #1a1d29;
+}
+
+// Element Plus 深色模式支持
+.theme-dark {
+  // Element Plus 卡片背景
+  .el-card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+    
+    .el-card__header {
+      border-bottom-color: var(--border-color) !important;
+      color: var(--text-primary) !important;
+    }
+  }
+  
+  // Element Plus 输入框（包括选择器输入框）
+  .el-input__wrapper {
+    background-color: var(--bg-color) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 0 0 1px var(--border-color) inset !important;
+    
+    &:hover {
+      box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+    }
+    
+    &.is-focus {
+      box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+    }
+  }
+  
+  // 登录和注册页面保持浅色主题（排除深色模式影响）
+  .login-container,
+  .register-container {
+    .el-input__wrapper {
+      background-color: #fff !important;
+      border-color: #dcdfe6 !important;
+      box-shadow: 0 0 0 1px #dcdfe6 inset !important;
+      
+      &:hover {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+      
+      &.is-focus {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+    }
+    
+    .el-input__inner {
+      color: #606266 !important;
+      
+      &::placeholder {
+        color: #c0c4cc !important;
+      }
+    }
+    
+    .el-select .el-input__wrapper {
+      background-color: #fff !important;
+      border-color: #dcdfe6 !important;
+      box-shadow: 0 0 0 1px #dcdfe6 inset !important;
+    }
+  }
+  
+  // 确保选择器输入框也使用深色背景（覆盖 Element Plus 默认样式）
+  // 使用更具体的选择器确保优先级足够高
+  // 排除登录和注册页面
+  .el-select:not(.login-container .el-select):not(.register-container .el-select) .el-input__wrapper,
+  .el-select:not(.login-container .el-select):not(.register-container .el-select) .el-input .el-input__wrapper {
+    background-color: var(--bg-color) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 0 0 1px var(--border-color) inset !important;
+  }
+  
+  // 登录和注册页面保持浅色主题
+  .login-container,
+  .register-container {
+    .el-input__wrapper {
+      background-color: #fff !important;
+      border-color: #dcdfe6 !important;
+      box-shadow: 0 0 0 1px #dcdfe6 inset !important;
+      
+      &:hover {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+      
+      &.is-focus {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+    }
+    
+    .el-input__inner {
+      color: #606266 !important;
+      
+      &::placeholder {
+        color: #c0c4cc !important;
+      }
+    }
+    
+    .el-select .el-input__wrapper {
+      background-color: #fff !important;
+      border-color: #dcdfe6 !important;
+      box-shadow: 0 0 0 1px #dcdfe6 inset !important;
+    }
+  }
+  
+  .el-input__inner {
+    color: var(--text-primary) !important;
+    
+    &::placeholder {
+      color: var(--text-secondary) !important;
+    }
+  }
+  
+  // Element Plus 按钮
+  .el-button {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+    
+    &:hover {
+      background-color: var(--bg-color) !important;
+      border-color: var(--primary-color) !important;
+      color: var(--primary-color) !important;
+    }
+    
+    &.is-plain {
+      background-color: transparent !important;
+      color: var(--text-primary) !important;
+      border-color: var(--border-color) !important;
+      
+      &:hover {
+        background-color: var(--bg-color) !important;
+        border-color: var(--primary-color) !important;
+        color: var(--primary-color) !important;
+      }
+    }
+    
+    &.el-button--primary {
+      background-color: var(--primary-color) !important;
+      border-color: var(--primary-color) !important;
+      color: #fff !important;
+      
+      &:hover {
+        background-color: #6ba3ff !important;
+        border-color: #6ba3ff !important;
+        color: #fff !important;
+      }
+      
+      // link 类型的 primary 按钮
+      &.is-link {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        color: var(--primary-color) !important;
+        padding: 0 !important;
+        
+        &:hover {
+          background-color: transparent !important;
+          border-color: transparent !important;
+          color: #6ba3ff !important;
+        }
+      }
+    }
+    
+    // 危险按钮
+    &.el-button--danger {
+      &.is-plain {
+        color: var(--danger-color) !important;
+        border-color: var(--danger-color) !important;
+        
+        &:hover {
+          background-color: rgba(245, 108, 108, 0.1) !important;
+          color: var(--danger-color) !important;
+        }
+      }
+    }
+  }
+  
+  // Element Plus 表格
+  .el-table {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    
+    th.el-table__cell {
+      background-color: var(--bg-color) !important;
+      color: var(--text-primary) !important;
+      border-color: var(--border-color) !important;
+      font-weight: 600 !important;
+    }
+    
+    td.el-table__cell {
+      border-color: var(--border-color) !important;
+      color: var(--text-primary) !important;
+      background-color: var(--card-bg) !important;
+    }
+    
+    tr {
+      background-color: var(--card-bg) !important;
+      
+      &:hover {
+        background-color: rgba(91, 158, 255, 0.08) !important;
+        
+        td.el-table__cell {
+          background-color: rgba(91, 158, 255, 0.08) !important;
+          color: var(--text-primary) !important;
+        }
+      }
+      
+      &.el-table__row--striped {
+        background-color: var(--bg-color) !important;
+        
+        td.el-table__cell {
+          background-color: var(--bg-color) !important;
+        }
+        
+        &:hover {
+          background-color: rgba(91, 158, 255, 0.08) !important;
+          
+          td.el-table__cell {
+            background-color: rgba(91, 158, 255, 0.08) !important;
+          }
+        }
+      }
+    }
+    
+    // 确保表格 body 背景色正确
+    .el-table__body-wrapper {
+      background-color: var(--card-bg) !important;
+    }
+  }
+  
+  // Element Plus 菜单
+  .el-menu {
+    background-color: var(--sidebar-bg) !important;
+    border-color: var(--border-color) !important;
+    
+    .el-menu-item {
+      color: var(--text-regular) !important;
+      
+      &:hover {
+        background-color: rgba(64, 158, 255, 0.15) !important;
+        color: var(--primary-color) !important;
+      }
+      
+      &.is-active {
+        background-color: var(--sidebar-active-bg) !important;
+        color: #fff !important;
+      }
+    }
+  }
+  
+  // Element Plus 对话框
+  .el-dialog {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    
+    .el-dialog__header {
+      border-bottom-color: var(--border-color) !important;
+      background-color: var(--card-bg) !important;
+      
+      .el-dialog__title {
+        color: var(--text-primary) !important;
+      }
+      
+      .el-dialog__headerbtn {
+        .el-dialog__close {
+          color: var(--text-secondary) !important;
+          
+          &:hover {
+            color: var(--text-primary) !important;
+          }
+        }
+      }
+    }
+    
+    .el-dialog__body {
+      background-color: var(--card-bg) !important;
+      color: var(--text-primary) !important;
+      
+      // 对话框内的文字
+      p, span, div {
+        color: var(--text-primary) !important;
+      }
+    }
+    
+    .el-dialog__footer {
+      border-top-color: var(--border-color) !important;
+      background-color: var(--card-bg) !important;
+    }
+  }
+  
+  // Element Plus 消息框（MessageBox）
+  .el-message-box {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    
+    .el-message-box__header {
+      .el-message-box__title {
+        color: var(--text-primary) !important;
+      }
+      
+      .el-message-box__headerbtn {
+        .el-message-box__close {
+          color: var(--text-secondary) !important;
+          
+          &:hover {
+            color: var(--text-primary) !important;
+          }
+        }
+      }
+    }
+    
+    .el-message-box__content {
+      color: var(--text-primary) !important;
+      
+      .el-message-box__message {
+        color: var(--text-primary) !important;
+      }
+    }
+    
+    .el-message-box__btns {
+      .el-button {
+        // 确保默认按钮（取消按钮）在深色模式下可见
+        &:not(.el-button--primary):not(.el-button--success):not(.el-button--warning):not(.el-button--danger):not(.el-button--info) {
+          background-color: var(--card-bg) !important;
+          border-color: var(--border-color) !important;
+          color: var(--text-primary) !important;
+          
+          &:hover {
+            background-color: var(--bg-color) !important;
+            border-color: var(--primary-color) !important;
+            color: var(--primary-color) !important;
+          }
+        }
+      }
+    }
+  }
+  
+  // Element Plus 表单
+  .el-form-item__label {
+    color: var(--text-primary) !important;
+  }
+  
+  // Element Plus 单选框
+  .el-radio {
+    color: var(--text-primary) !important;
+  }
+  
+  // Element Plus 开关
+  .el-switch__label {
+    color: var(--text-primary) !important;
+  }
+  
+  // Element Plus 选择器输入框 - 强制深色背景（与搜索框和日期选择器一致）
+  // 使用更高优先级的选择器确保样式生效，参考日期选择器的样式
+  .el-select .el-input__wrapper,
+  .el-select .el-input .el-input__wrapper,
+  .el-select__wrapper .el-input__wrapper,
+  .el-select.is-disabled .el-input__wrapper,
+  .el-select:not(.is-disabled) .el-input__wrapper,
+  .el-select .el-input.is-focus .el-input__wrapper,
+  .el-select .el-input.is-disabled .el-input__wrapper {
+    background-color: var(--bg-color) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 0 0 1px var(--border-color) inset !important;
+    
+    &:hover {
+      box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+    }
+    
+    &.is-focus {
+      box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+    }
+  }
+  
+  // 确保选择器输入框在所有状态下都使用深色背景
+  .el-select .el-input {
+    .el-input__wrapper {
+      background-color: var(--bg-color) !important;
+      border-color: var(--border-color) !important;
+      box-shadow: 0 0 0 1px var(--border-color) inset !important;
+    }
+    
+    &:hover .el-input__wrapper {
+      box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+    }
+    
+    &.is-focus .el-input__wrapper {
+      box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+    }
+  }
+  
+  // 登录和注册页面的选择器保持浅色主题（覆盖深色模式样式）
+  .login-container,
+  .register-container {
+    .el-select .el-input__wrapper,
+    .el-select .el-input .el-input__wrapper {
+      background-color: #fff !important;
+      border-color: #dcdfe6 !important;
+      box-shadow: 0 0 0 1px #dcdfe6 inset !important;
+      
+      &:hover {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+      
+      &.is-focus {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+    }
+    
+    .el-select .el-input {
+      .el-input__wrapper {
+        background-color: #fff !important;
+        border-color: #dcdfe6 !important;
+        box-shadow: 0 0 0 1px #dcdfe6 inset !important;
+      }
+      
+      &:hover .el-input__wrapper {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+      
+      &.is-focus .el-input__wrapper {
+        box-shadow: 0 0 0 1px #409eff inset !important;
+      }
+    }
+  }
+  
+  .el-select .el-input__inner,
+  .el-select .el-input .el-input__inner,
+  .el-select__wrapper .el-input__inner {
+    color: var(--text-primary) !important;
+    background-color: transparent !important;
+    
+    &::placeholder {
+      color: var(--text-secondary) !important;
+    }
+  }
+  
+  .el-select .el-input__suffix .el-select__caret {
+    color: var(--text-secondary) !important;
+  }
+  
+  // Element Plus 下拉菜单（el-select-dropdown）- 使用 popper 类名
+  .el-select-dropdown,
+  .el-popper.is-dark,
+  .el-popper[data-popper-placement] {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4) !important;
+    
+    .el-select-dropdown__item {
+      color: var(--text-primary) !important;
+      background-color: transparent !important;
+      
+      &:hover {
+        background-color: rgba(91, 158, 255, 0.15) !important;
+        color: var(--primary-color) !important;
+      }
+      
+      &.selected {
+        background-color: rgba(91, 158, 255, 0.25) !important;
+        color: var(--primary-color) !important;
+        font-weight: 500 !important;
+      }
+      
+      // 选中且悬停状态
+      &.selected:hover {
+        background-color: rgba(91, 158, 255, 0.3) !important;
+        color: var(--primary-color) !important;
+      }
+    }
+  }
+  
+  // 确保下拉菜单的包装器也是深色
+  .el-select-dropdown__wrap {
+    background-color: var(--card-bg) !important;
+  }
+  
+  // 下拉菜单的箭头（如果存在）
+  .el-popper__arrow::before {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  // Element Plus 下拉菜单（el-dropdown-menu）
+  .el-dropdown-menu,
+  .el-popper[data-popper-placement] .el-dropdown-menu {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4) !important;
+    
+    .el-dropdown-menu__item {
+      color: var(--text-primary) !important;
+      background-color: transparent !important;
+      
+      &:hover {
+        background-color: rgba(91, 158, 255, 0.15) !important;
+        color: var(--primary-color) !important;
+      }
+      
+      &.is-divided {
+        border-top-color: var(--border-color) !important;
+      }
+    }
+  }
+  
+  // 下拉菜单的箭头
+  .el-dropdown-menu__arrow {
+    &::before {
+      background-color: var(--card-bg) !important;
+      border-color: var(--border-color) !important;
+    }
+  }
+  
+  // Element Plus 选项（el-option）
+  .el-select-dropdown__item,
+  .el-option {
+    color: var(--text-primary) !important;
+    background-color: transparent !important;
+    
+    &:hover {
+      background-color: rgba(91, 158, 255, 0.15) !important;
+      color: var(--primary-color) !important;
+    }
+    
+    &.selected {
+      background-color: rgba(91, 158, 255, 0.25) !important;
+      color: var(--primary-color) !important;
+      font-weight: 500 !important;
+    }
+    
+    &.selected:hover {
+      background-color: rgba(91, 158, 255, 0.3) !important;
+      color: var(--primary-color) !important;
+    }
+  }
+  
+  // Element Plus 单选框组
+  .el-radio-group {
+    .el-radio__label {
+      color: var(--text-primary) !important;
+    }
+    
+    .el-radio__input.is-checked .el-radio__inner {
+      background-color: var(--primary-color) !important;
+      border-color: var(--primary-color) !important;
+    }
+  }
+  
+  // Element Plus 开关
+  .el-switch {
+    .el-switch__core {
+      background-color: var(--border-color) !important;
+    }
+    
+    &.is-checked .el-switch__core {
+      background-color: var(--primary-color) !important;
+    }
+  }
+  
+  // Element Plus 标签
+  .el-tag {
+    background-color: var(--bg-color) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+    
+    &.el-tag--success {
+      background-color: rgba(103, 194, 58, 0.2) !important;
+      border-color: var(--success-color) !important;
+      color: var(--success-color) !important;
+    }
+    
+    &.el-tag--info {
+      background-color: rgba(144, 147, 153, 0.2) !important;
+      border-color: var(--info-color) !important;
+      color: var(--info-color) !important;
+    }
+  }
+  
+  // Element Plus 分割线
+  .el-divider {
+    border-color: var(--border-color) !important;
+    
+    .el-divider__text {
+      background-color: var(--card-bg) !important;
+      color: var(--text-secondary) !important;
+    }
+  }
+  
+  // Element Plus 时间线
+  .el-timeline {
+    .el-timeline-item__timestamp {
+      color: var(--text-secondary) !important;
+    }
+    
+    .el-timeline-item__content {
+      color: var(--text-primary) !important;
+    }
+  }
+  
+  // Element Plus 日期选择器 - 与普通输入框样式一致（深色背景）
+  .el-date-editor {
+    .el-input__wrapper {
+      background-color: var(--bg-color) !important;
+      border-color: var(--border-color) !important;
+      box-shadow: 0 0 0 1px var(--border-color) inset !important;
+      
+      &:hover {
+        box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+      }
+      
+      &.is-focus {
+        box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+      }
+    }
+    
+    .el-input__inner {
+      color: var(--text-primary) !important;
+      
+      &::placeholder {
+        color: var(--text-secondary) !important;
+      }
+    }
+  }
+  
+  .el-picker__popper {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    
+    // 日期选择器面板
+    .el-picker-panel {
+      background-color: var(--card-bg) !important;
+      border-color: var(--border-color) !important;
+    }
+    
+    // 日期选择器头部
+    .el-picker-panel__header {
+      background-color: var(--card-bg) !important;
+      color: var(--text-primary) !important;
+      
+      button {
+        color: var(--text-primary) !important;
+        
+        &:hover {
+          color: var(--primary-color) !important;
+        }
+      }
+    }
+    
+    // 日期表格
+    .el-date-table {
+      background-color: var(--card-bg) !important;
+      
+      th {
+        color: var(--text-primary) !important;
+        font-weight: 600 !important;
+        background-color: var(--card-bg) !important;
+      }
+      
+      td {
+        color: var(--text-primary) !important;
+        background-color: transparent !important;
+        
+        .el-date-table__cell {
+          background-color: transparent !important;
+          color: var(--text-primary) !important;
+        }
+        
+        &.available {
+          .el-date-table__cell {
+            &:hover {
+              background-color: rgba(91, 158, 255, 0.15) !important;
+              color: var(--primary-color) !important;
+            }
+          }
+        }
+        
+        &.current {
+          .el-date-table__cell {
+            background-color: var(--primary-color) !important;
+            color: #fff !important;
+          }
+        }
+        
+        &.today {
+          .el-date-table__cell {
+            color: var(--primary-color) !important;
+            font-weight: 600 !important;
+          }
+        }
+        
+        &.prev-month,
+        &.next-month {
+          .el-date-table__cell {
+            color: var(--text-disabled) !important;
+          }
+        }
+      }
+    }
+    
+    // 日期范围选择器
+    .el-date-range-picker {
+      background-color: var(--card-bg) !important;
+      
+      .el-picker-panel__body {
+        background-color: var(--card-bg) !important;
+      }
+      
+      .el-picker-panel__content {
+        background-color: var(--card-bg) !important;
+      }
+    }
+  }
+  
+  // Element Plus 分页
+  .el-pagination {
+    color: var(--text-primary) !important;
+    
+    .el-pagination__total,
+    .el-pagination__jump {
+      color: var(--text-primary) !important;
+    }
+    
+    .btn-prev,
+    .btn-next {
+      background-color: var(--card-bg) !important;
+      color: var(--text-primary) !important;
+      border-color: var(--border-color) !important;
+      
+      &:hover {
+        color: var(--primary-color) !important;
+      }
+    }
+    
+    .el-pager li {
+      background-color: var(--card-bg) !important;
+      color: var(--text-primary) !important;
+      border-color: var(--border-color) !important;
+      
+      &.is-active {
+        background-color: var(--primary-color) !important;
+        color: #fff !important;
+      }
+      
+      &:hover {
+        color: var(--primary-color) !important;
+      }
+    }
+    
+    .el-pagination__sizes {
+      .el-select {
+        .el-input__wrapper {
+          background-color: var(--card-bg) !important;
+        }
+      }
+    }
+  }
+  
+  // 全局覆盖所有通过 popper 渲染的下拉菜单（使用更高优先级）
+  // Element Plus 的下拉菜单是通过 popper 渲染到 body 的，需要使用全局样式
+  // 注意：这些样式会应用到所有通过 popper 渲染的组件（下拉菜单、选择器等）
+  body .el-popper,
+  body .el-popper[data-popper-placement],
+  body .el-select-dropdown,
+  body .el-dropdown-menu {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4) !important;
+    
+    // 下拉菜单项
+    .el-select-dropdown__item,
+    .el-dropdown-menu__item {
+      color: var(--text-primary) !important;
+      background-color: transparent !important;
+      
+      &:hover {
+        background-color: rgba(91, 158, 255, 0.15) !important;
+        color: var(--primary-color) !important;
+      }
+      
+      &.selected {
+        background-color: rgba(91, 158, 255, 0.25) !important;
+        color: var(--primary-color) !important;
+        font-weight: 500 !important;
+      }
+      
+      &.selected:hover {
+        background-color: rgba(91, 158, 255, 0.3) !important;
+        color: var(--primary-color) !important;
+      }
+    }
+  }
+  
+  // 下拉菜单的包装器
+  body .el-select-dropdown__wrap {
+    background-color: var(--card-bg) !important;
+  }
+  
+  // 下拉菜单的箭头
+  body .el-popper__arrow::before {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+  }
+}
+
+// 通用类
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 卡片阴影
+.card-shadow {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+// 过渡动画
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// 状态颜色
+.status-success {
+  color: var(--success-color);
+}
+
+.status-warning {
+  color: var(--warning-color);
+}
+
+.status-danger {
+  color: var(--danger-color);
+}
+
+.status-info {
+  color: var(--info-color);
+}
+

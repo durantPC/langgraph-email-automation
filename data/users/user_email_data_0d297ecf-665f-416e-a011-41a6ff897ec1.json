@@ -1,0 +1,78 @@
+{
+  "emails_cache": [],
+  "history": [],
+  "activities": [
+    {
+      "time": "2025-12-21 00:16:19",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-21 00:16:18",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增0封，移除3封）"
+    },
+    {
+      "time": "2025-12-20 21:50:56",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增3封，移除0封）"
+    },
+    {
+      "time": "2025-12-20 12:55:59",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-20 12:55:53",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增0封，移除1封）"
+    },
+    {
+      "time": "2025-12-19 22:02:06",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-19 22:01:49",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-19 22:01:36",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-19 22:01:31",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-19 22:01:09",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增2封，移除0封）"
+    }
+  ],
+  "stats": {
+    "today_emails": 3,
+    "processed": 0,
+    "pending": 3,
+    "failed": 0,
+    "sent": 0
+  },
+  "last_check_time": "2025-12-21T00:16:19.434147",
+  "is_running": false,
+  "auto_process": false,
+  "check_interval": 900,
+  "last_save_time": "2025-12-21T00:16:19.434830"
+}

@@ -1,0 +1,551 @@
+{
+  "emails_cache": [
+    {
+      "id": "<tencent_EB06BAB6989DE3F6E9073B5E1DEF2AC7F906@qq.com>",
+      "threadId": "<tencent_EB06BAB6989DE3F6E9073B5E1DEF2AC7F906@qq.com>",
+      "messageId": "<tencent_EB06BAB6989DE3F6E9073B5E1DEF2AC7F906@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "111",
+      "body": "这封邮件很重要",
+      "imap_id": "b'5'",
+      "time": "2025-12-27 18:37:42",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "这封邮件很重要...",
+      "body_summary": "请提供邮件正文内容，我将为您提炼50-100字的核心摘要。"
+    },
+    {
+      "id": "<tencent_A41A2F9CB788E3684353FBDE0E6C1BE58305@qq.com>",
+      "threadId": "<tencent_A41A2F9CB788E3684353FBDE0E6C1BE58305@qq.com>",
+      "messageId": "<tencent_A41A2F9CB788E3684353FBDE0E6C1BE58305@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "重要邮件",
+      "body": "这封邮件请尽快回复",
+      "imap_id": "b'6'",
+      "time": "2025-12-27 19:33:37",
+      "status": "skipped",
+      "category": "unrelated",
+      "reply": "无关邮件，已跳过",
+      "preview": "这封邮件请尽快回复...",
+      "body_summary": "\n\n请尽快回复此邮件。该请求强调了及时响应的重要性，以确保沟通顺畅和事项处理的及时性。务必在最短时间内完成回复，避免任何延误。 (54字)"
+    },
+    {
+      "id": "<tencent_EFECBCB6113E32F176783F38723622B50D09@qq.com>",
+      "threadId": "<tencent_EFECBCB6113E32F176783F38723622B50D09@qq.com>",
+      "messageId": "<tencent_EFECBCB6113E32F176783F38723622B50D09@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "立即回复",
+      "body": "请立即回复",
+      "imap_id": "b'7'",
+      "time": "2025-12-27 19:34:35",
+      "status": "skipped",
+      "category": "unrelated",
+      "reply": "无关邮件，已跳过",
+      "preview": "请立即回复...",
+      "body_summary": "\n\n您好！您未提供需要摘要的文本内容。请粘贴具体文本，我将立即生成50-100字的简洁摘要，保留关键信息。期待您的补充。"
+    },
+    {
+      "id": "<tencent_684B0EFE0D2FED343BC46D880F783C245E07@qq.com>",
+      "threadId": "<tencent_684B0EFE0D2FED343BC46D880F783C245E07@qq.com>",
+      "messageId": "<tencent_684B0EFE0D2FED343BC46D880F783C245E07@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "紧急邮件",
+      "body": "紧急邮件",
+      "imap_id": "b'8'",
+      "time": "2025-12-27 19:48:30",
+      "status": "skipped",
+      "category": "unrelated",
+      "reply": "无关邮件，已跳过",
+      "preview": "紧急邮件...",
+      "body_summary": "\n\n这是一封紧急邮件，内容涉及需要立即关注的事项。关键信息包括其紧迫性、处理要求和潜在影响。务必优先响应以确保问题及时解决，避免任何负面后果。（68字）"
+    },
+    {
+      "id": "<tencent_B1F68F30BC00DE208E928D31ED5DBB89ED07@qq.com>",
+      "threadId": "<tencent_B1F68F30BC00DE208E928D31ED5DBB89ED07@qq.com>",
+      "messageId": "<tencent_B1F68F30BC00DE208E928D31ED5DBB89ED07@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "紧急！请立即处理服务器宕机问题\n",
+      "body": "主题：紧急！请立即处理服务器宕机问题\r\n\r\n\r\n您好，\r\n\r\n\r\n我们的生产服务器在今天下午 14:30 分突然宕机，导致所有线上业务无法访问。\r\n\r\n\r\n紧急影响：\r\n- 约 10000+ 用户无法正常使用系统\r\n- 每小时损失估计超过 10 万元\r\n- 客户投诉电话已经被打爆\r\n\r\n\r\n紧急需求：\r\n1. 请立即登录服务器检查问题根源\r\n2. 需要在 30 分钟内恢复服务\r\n3. 请马上联系运维团队进行处理\r\n\r\n\r\n这是一个 P0 级别的紧急故障，请尽快处理！\r\n\r\n\r\n谢谢，\r\n张三\r\n运维主管\r\n电话：138-xxxx-xxxx",
+      "imap_id": "b'9'",
+      "time": "2025-12-27 20:18:15",
+      "status": "processed",
+      "category": "customer_complaint",
+      "reply": "尊敬的客户，您好！\n\n我们已确认您的P0级紧急故障（服务器宕机），并立即启动最高级别应急响应。您的需求已同步至运维团队：\n\n1. **已安排技术主管直接登录服务器**，正在紧急排查问题根源\n2. **承诺30分钟内恢复服务**，当前团队正在全力处理\n3. **已联系运维负责人**直接对接处理\n\n我们完全理解10000+用户无法访问和每小时10万元损失的严重性，已将此故障列为最高优先级。我们将每5分钟通过电话（138-xxxx-xxxx）向您发送进度更新。如需直接沟通，请立即拨打138-xxxx-xxxx（运维负责人）或通过企业微信联系我（已添加您为紧急联系人）。\n\n祝好！\nAgentia 团队",
+      "preview": "主题：紧急！请立即处理服务器宕机问题\r\n\r\n\r\n您好，\r\n\r\n\r\n我们的生产服务器在今天下午 14:30 分突然宕机，导致所有线上业务无法访问。\r\n\r\n\r\n紧急影响：\r\n- 约 10000+ 用户无法...",
+      "body_summary": "\n\n生产服务器于今日14:30突然宕机，导致10000+用户无法访问系统，每小时损失超10万元，客户投诉激增。需立即登录服务器检查问题根源，30分钟内恢复服务并联系运维团队。此为P0级紧急故障，请速处理。（78字）",
+      "reply_summary": "\n\n已确认P0级服务器宕机故障，启动最高级别应急响应。技术主管正紧急排查，承诺30分钟内恢复服务。理解10000+用户无法访问及每小时10万元损失，故障列为最高优先级。每5分钟电话更新进度，联系138-xxxx-xxxx或企业微信。（59字）"
+    },
+    {
+      "id": "<tencent_10311F617874BC011C761BB0DACB76CFDB08@qq.com>",
+      "threadId": "<tencent_10311F617874BC011C761BB0DACB76CFDB08@qq.com>",
+      "messageId": "<tencent_10311F617874BC011C761BB0DACB76CFDB08@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "紧急！请立即处理服务器宕机问题\n",
+      "body": "主题：紧急！请立即处理服务器宕机问题\r\n\r\n\r\n您好，\r\n\r\n\r\n我们的生产服务器在今天下午 14:30 分突然宕机，导致所有线上业务无法访问。\r\n\r\n\r\n紧急影响：\r\n- 约 10000+ 用户无法正常使用系统\r\n- 每小时损失估计超过 10 万元\r\n- 客户投诉电话已经被打爆\r\n\r\n\r\n紧急需求：\r\n1. 请立即登录服务器检查问题根源\r\n2. 需要在 30 分钟内恢复服务\r\n3. 请马上联系运维团队进行处理\r\n\r\n\r\n这是一个 P0 级别的紧急故障，请尽快处理！\r\n\r\n\r\n谢谢，\r\n张三\r\n运维主管\r\n电话：138-xxxx-xxxx",
+      "imap_id": "b'10'",
+      "time": "2025-12-27 21:36:39",
+      "status": "pending",
+      "category": "customer_complaint",
+      "reply": null,
+      "preview": "主题：紧急！请立即处理服务器宕机问题\r\n\r\n\r\n您好，\r\n\r\n\r\n我们的生产服务器在今天下午 14:30 分突然宕机，导致所有线上业务无法访问。\r\n\r\n\r\n紧急影响：\r\n- 约 10000+ 用户无法...",
+      "urgency_level": "urgent",
+      "urgency_keywords": [
+        "紧急",
+        "立即",
+        "马上",
+        "尽快",
+        "无法访问",
+        "尽快处理"
+      ],
+      "body_summary": "\n\n生产服务器于今日14:30突然宕机，导致10000+用户无法访问系统，每小时损失超10万元，客户投诉激增。需立即检查问题根源，30分钟内恢复服务并联系运维团队。此为P0级紧急故障，务必尽快处理。（68字）"
+    },
+    {
+      "id": "<tencent_7E0E6BDBF9C306EF90B783E37863587BC005@qq.com>",
+      "threadId": "<tencent_7E0E6BDBF9C306EF90B783E37863587BC005@qq.com>",
+      "messageId": "<tencent_7E0E6BDBF9C306EF90B783E37863587BC005@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "这封邮件很重要",
+      "body": "请尽快回复",
+      "imap_id": "b'11'",
+      "time": "2025-12-27 21:37:35",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "请尽快回复...",
+      "urgency_level": "urgent",
+      "urgency_keywords": [
+        "尽快"
+      ],
+      "body_summary": "\n\n您好！您要求我总结文本，但未提供具体内容。作为专业摘要助手，我需要您粘贴需要处理的文本，以便在50-100字内生成简洁摘要并保留关键信息。请尽快提供文本，我将立即响应。谢谢！"
+    },
+    {
+      "id": "<tencent_26072F3307D5869136821DCDF6DA873C1E06@qq.com>",
+      "threadId": "<tencent_26072F3307D5869136821DCDF6DA873C1E06@qq.com>",
+      "messageId": "<tencent_26072F3307D5869136821DCDF6DA873C1E06@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "111",
+      "body": "紧急邮件",
+      "imap_id": "b'12'",
+      "time": "2025-12-27 21:38:32",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "紧急邮件...",
+      "urgency_level": "urgent",
+      "urgency_keywords": [
+        "紧急"
+      ]
+    },
+    {
+      "id": "<tencent_921F9278B3BCCA1C2F1B89DADA769DDB0008@qq.com>",
+      "threadId": "<tencent_921F9278B3BCCA1C2F1B89DADA769DDB0008@qq.com>",
+      "messageId": "<tencent_921F9278B3BCCA1C2F1B89DADA769DDB0008@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "111",
+      "body": "普通邮件",
+      "imap_id": "b'13'",
+      "time": "2025-12-27 21:38:32",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "普通邮件...",
+      "urgency_level": "low",
+      "urgency_keywords": []
+    }
+  ],
+  "history": [
+    {
+      "id": "<tencent_B1F68F30BC00DE208E928D31ED5DBB89ED07@qq.com>",
+      "threadId": "<tencent_B1F68F30BC00DE208E928D31ED5DBB89ED07@qq.com>",
+      "messageId": "<tencent_B1F68F30BC00DE208E928D31ED5DBB89ED07@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "紧急！请立即处理服务器宕机问题\n",
+      "body": "主题：紧急！请立即处理服务器宕机问题\r\n\r\n\r\n您好，\r\n\r\n\r\n我们的生产服务器在今天下午 14:30 分突然宕机，导致所有线上业务无法访问。\r\n\r\n\r\n紧急影响：\r\n- 约 10000+ 用户无法正常使用系统\r\n- 每小时损失估计超过 10 万元\r\n- 客户投诉电话已经被打爆\r\n\r\n\r\n紧急需求：\r\n1. 请立即登录服务器检查问题根源\r\n2. 需要在 30 分钟内恢复服务\r\n3. 请马上联系运维团队进行处理\r\n\r\n\r\n这是一个 P0 级别的紧急故障，请尽快处理！\r\n\r\n\r\n谢谢，\r\n张三\r\n运维主管\r\n电话：138-xxxx-xxxx",
+      "imap_id": "b'9'",
+      "time": "2025-12-27 20:18:15",
+      "status": "processed",
+      "category": "customer_complaint",
+      "reply": "尊敬的客户，您好！\n\n我们已确认您的P0级紧急故障（服务器宕机），并立即启动最高级别应急响应。您的需求已同步至运维团队：\n\n1. **已安排技术主管直接登录服务器**，正在紧急排查问题根源\n2. **承诺30分钟内恢复服务**，当前团队正在全力处理\n3. **已联系运维负责人**直接对接处理\n\n我们完全理解10000+用户无法访问和每小时10万元损失的严重性，已将此故障列为最高优先级。我们将每5分钟通过电话（138-xxxx-xxxx）向您发送进度更新。如需直接沟通，请立即拨打138-xxxx-xxxx（运维负责人）或通过企业微信联系我（已添加您为紧急联系人）。\n\n祝好！\nAgentia 团队",
+      "preview": "主题：紧急！请立即处理服务器宕机问题\r\n\r\n\r\n您好，\r\n\r\n\r\n我们的生产服务器在今天下午 14:30 分突然宕机，导致所有线上业务无法访问。\r\n\r\n\r\n紧急影响：\r\n- 约 10000+ 用户无法...",
+      "body_summary": "\n\n生产服务器于今日14:30突然宕机，导致10000+用户无法访问系统，每小时损失超10万元，客户投诉激增。需立即登录服务器检查问题根源，30分钟内恢复服务并联系运维团队。此为P0级紧急故障，请速处理。（78字）",
+      "processed_time": "2025-12-27 20:26:03",
+      "reply_summary": "\n\n已确认P0级服务器宕机故障，启动最高级别应急响应。技术主管正紧急排查，承诺30分钟内恢复服务。理解10000+用户无法访问及每小时10万元损失，故障列为最高优先级。每5分钟电话更新进度，联系138-xxxx-xxxx或企业微信。（59字）"
+    },
+    {
+      "id": "<tencent_A41A2F9CB788E3684353FBDE0E6C1BE58305@qq.com>",
+      "threadId": "<tencent_A41A2F9CB788E3684353FBDE0E6C1BE58305@qq.com>",
+      "messageId": "<tencent_A41A2F9CB788E3684353FBDE0E6C1BE58305@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "重要邮件",
+      "body": "这封邮件请尽快回复",
+      "imap_id": "b'6'",
+      "time": "2025-12-27 19:33:37",
+      "status": "skipped",
+      "category": "unrelated",
+      "reply": "无关邮件，已跳过",
+      "preview": "这封邮件请尽快回复...",
+      "body_summary": "\n\n请尽快回复此邮件。该请求强调了及时响应的重要性，以确保沟通顺畅和事项处理的及时性。务必在最短时间内完成回复，避免任何延误。 (54字)",
+      "processed_time": "2025-12-27 20:22:31"
+    },
+    {
+      "id": "<tencent_EFECBCB6113E32F176783F38723622B50D09@qq.com>",
+      "threadId": "<tencent_EFECBCB6113E32F176783F38723622B50D09@qq.com>",
+      "messageId": "<tencent_EFECBCB6113E32F176783F38723622B50D09@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "立即回复",
+      "body": "请立即回复",
+      "imap_id": "b'7'",
+      "time": "2025-12-27 19:34:35",
+      "status": "skipped",
+      "category": "unrelated",
+      "reply": "无关邮件，已跳过",
+      "preview": "请立即回复...",
+      "body_summary": "\n\n您好！您未提供需要摘要的文本内容。请粘贴具体文本，我将立即生成50-100字的简洁摘要，保留关键信息。期待您的补充。",
+      "processed_time": "2025-12-27 20:13:19"
+    },
+    {
+      "id": "<tencent_684B0EFE0D2FED343BC46D880F783C245E07@qq.com>",
+      "threadId": "<tencent_684B0EFE0D2FED343BC46D880F783C245E07@qq.com>",
+      "messageId": "<tencent_684B0EFE0D2FED343BC46D880F783C245E07@qq.com>",
+      "references": "",
+      "sender": "1542317297@qq.com",
+      "subject": "紧急邮件",
+      "body": "紧急邮件",
+      "imap_id": "b'8'",
+      "time": "2025-12-27 19:48:30",
+      "status": "skipped",
+      "category": "unrelated",
+      "reply": "无关邮件，已跳过",
+      "preview": "紧急邮件...",
+      "body_summary": "\n\n这是一封紧急邮件，内容涉及需要立即关注的事项。关键信息包括其紧迫性、处理要求和潜在影响。务必优先响应以确保问题及时解决，避免任何负面后果。（68字）",
+      "processed_time": "2025-12-27 20:13:05"
+    }
+  ],
+  "activities": [
+    {
+      "time": "2025-12-27 21:38:32",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增2封，移除0封）"
+    },
+    {
+      "time": "2025-12-27 21:38:11",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:37:35",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除0封）"
+    },
+    {
+      "time": "2025-12-27 21:36:39",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除0封）"
+    },
+    {
+      "time": "2025-12-27 21:35:21",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:16:38",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:14:11",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:13:34",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:10:43",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:04:28",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:01:47",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 21:00:19",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:59:02",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:57:20",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:56:41",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:56:26",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:56:17",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:54:38",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:50:56",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:50:47",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:46:09",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:44:18",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:33:36",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:32:24",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:28:32",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:28:26",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:27:35",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:27:14",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:26:03",
+      "type": "success",
+      "icon": "CircleCheck",
+      "content": "处理了邮件: 客户投诉"
+    },
+    {
+      "time": "2025-12-27 20:25:49",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:20:17",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:19:41",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:19:10",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:18:52",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 20:18:15",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除0封）"
+    },
+    {
+      "time": "2025-12-27 20:15:50",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 19:48:30",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除0封）"
+    },
+    {
+      "time": "2025-12-27 19:46:29",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 19:45:40",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 19:34:35",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除0封）"
+    },
+    {
+      "time": "2025-12-27 19:33:37",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除1封）"
+    },
+    {
+      "time": "2025-12-27 19:31:08",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 19:08:23",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 18:39:23",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 18:39:18",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 18:39:18",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 18:39:18",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 18:37:42",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除0封）"
+    },
+    {
+      "time": "2025-12-27 18:30:59",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-27 18:30:02",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    }
+  ],
+  "stats": {
+    "today_emails": 9,
+    "processed": 4,
+    "pending": 5,
+    "failed": 0,
+    "sent": 0
+  },
+  "last_check_time": "2025-12-27T21:38:32.646659",
+  "is_running": false,
+  "auto_process": false,
+  "check_interval": 900,
+  "last_save_time": "2025-12-27T21:38:46.977608"
+}

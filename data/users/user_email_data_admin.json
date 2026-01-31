@@ -1,0 +1,66 @@
+{
+  "emails_cache": [],
+  "history": [],
+  "activities": [
+    {
+      "time": "2025-12-07 22:54:10",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:09",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:42:55",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:42:54",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:25",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:24",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:03",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:02",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    }
+  ],
+  "stats": {
+    "today_emails": 0,
+    "processed": 0,
+    "pending": 0,
+    "failed": 0,
+    "sent": 0
+  },
+  "last_check_time": "2025-12-07T22:54:10.704462",
+  "is_running": false,
+  "auto_process": false,
+  "check_interval": 900,
+  "last_save_time": "2025-12-07T22:54:18.315561"
+}

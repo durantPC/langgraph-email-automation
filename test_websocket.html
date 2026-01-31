@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket 测试</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>WebSocket 连接测试</h1>
+    <div id="status">状态: 未连接</div>
+    <div id="messages" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; height: 400px; overflow-y: auto;"></div>
+    
+    <script>
+        const statusDiv = document.getElementById('status');
+        const messagesDiv = document.getElementById('messages');
+        
+        function log(message, type = 'info') {
+            const time = new Date().toLocaleTimeString();
+            const color = type === 'error' ? 'red' : type === 'success' ? 'green' : 'black';
+            messagesDiv.innerHTML += `<div style="color: ${color}">[${time}] ${message}</div>`;
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+        
+        // 从 localStorage 获取 token（如果有的话）
+        const token = localStorage.getItem('token');
+        const wsUrl = token 
+            ? `ws://localhost:8000/api/ws?token=${encodeURIComponent(token)}`
+            : 'ws://localhost:8000/api/ws';
+        
+        log(`正在连接到: ${wsUrl}`);
+        statusDiv.textContent = '状态: 连接中...';
+        
+        const ws = new WebSocket(wsUrl);
+        
+        ws.onopen = () => {
+            log('WebSocket 连接已建立', 'success');
+            statusDiv.textContent = '状态: 已连接';
+            statusDiv.style.color = 'green';
+        };
+        
+        ws.onmessage = (event) => {
+            try {
+                const data = JSON.parse(event.data);
+                log(`收到消息: ${JSON.stringify(data, null, 2)}`, 'success');
+            } catch (e) {
+                log(`收到消息（非JSON）: ${event.data}`);
+            }
+        };
+        
+        ws.onerror = (error) => {
+            log(`WebSocket 错误: ${error}`, 'error');
+            statusDiv.textContent = '状态: 错误';
+            statusDiv.style.color = 'red';
+        };
+        
+        ws.onclose = () => {
+            log('WebSocket 连接已关闭', 'error');
+            statusDiv.textContent = '状态: 已断开';
+            statusDiv.style.color = 'orange';
+        };
+    </script>
+</body>
+</html>

@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 # Load all env variables
 load_dotenv()
 
-# config 
-config = {'recursion_limit': 100}
+# config - 增加递归限制以处理更多邮件
+config = {'recursion_limit': 200}
 
 workflow = Workflow()
 app = workflow.app
@@ -20,7 +20,8 @@ initial_state = {
       "references": "",
       "sender": "",
       "subject": "",
-      "body": ""
+      "body": "",
+      "imap_id": b""
     },
     "email_category": "",
     "generated_email": "",
@@ -32,9 +33,9 @@ initial_state = {
 }
 
 # Run the automation
-print(Fore.GREEN + "Starting workflow..." + Style.RESET_ALL)
+print(Fore.GREEN + "正在启动工作流..." + Style.RESET_ALL)
 for output in app.stream(initial_state, config):
     for key, value in output.items():
-        print(Fore.CYAN + f"Finished running: {key}:" + Style.RESET_ALL)
+        print(Fore.CYAN + f"完成运行: {key}:" + Style.RESET_ALL)
 
 

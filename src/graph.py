@@ -39,7 +39,7 @@ class Workflow():
             nodes.route_email_based_on_category,
             {
                 "product related": "construct_rag_queries",
-                "not product related": "email_writer", # Feedback or Complaint
+                "not product related": "email_writer",
                 "unrelated": "skip_unrelated_email"
             }
         )

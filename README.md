@@ -1,143 +1,214 @@
-<!--
-Title: Customer Support Email Automation System | Langchain/Langgraph Integration
-Description: Automate customer support emails with our system built using Langchain/Langgraph. Features include email categorization, query synthesis, draft email creation, and email verification.
-Keywords: Customer support automation, email automation, Langchain, Langgraph, AI email agents, Gmail API, Python email automation, email categorization, email verification, AI agents, AI tools
-Author: kaymen99
--->
+# 📧 邮件自动化系统
 
-# 🚀 **Customer Support Email Automation with AI Agents and RAG**
+基于 **AI代理** 和 **RAG** 的智能客户支持邮件自动化系统。
 
-## 📩 **FULL TUTORIAL: Build AI-Powered Email Automation Using AI Agents + RAG!** 👉 [Read Now](https://dev.to/kaymen99/boost-customer-support-ai-agents-langgraph-and-rag-for-email-automation-21hj) 🎯   
+![workflow](workflow.png)
 
-![customer-support-ai-automation](https://github.com/user-attachments/assets/eb061276-0579-4e28-9360-482c8da33a9d)
+## ✨ 功能特性
 
-## **Introduction**  
+- 🔍 **智能分类** - AI自动分类邮件（产品咨询/客户投诉/客户反馈/无关邮件）
+- 🤖 **RAG检索** - 基于知识库检索相关信息生成精准回复
+- ✍️ **自动回复** - AI生成专业的邮件回复内容
+- ✅ **质量校验** - 自动校验回复质量，确保专业性
+- 🌐 **Web管理** - 美观的Web界面，轻松管理邮件
 
-In today's **fast-paced environment**, customers demand **quick, accurate, and personalized responses**—expectations that can overwhelm traditional support teams. Managing large volumes of emails, categorizing them, crafting appropriate replies, and ensuring quality consumes **significant time and resources**, often leading to **delays or errors**, which can harm customer satisfaction.  
+## 🛠️ 技术栈
 
-**Customer Support Email Automation** is an **AI solution** designed to enhance **customer communication** for businesses. Leveraging a **Langgraph-driven workflow**, multiple **AI agents** collaborate to efficiently manage, categorize, and respond to customer emails. The system also implements **RAG (Retrieval-Augmented Generation)** technology to deliver **accurate responses** to any business or product-related questions.  
+| 类别 | 技术 |
+|------|------|
+| **后端** | Python + FastAPI + LangGraph |
+| **前端** | Vue 3 + Element Plus + ECharts |
+| **LLM** | 硅基流动 (Qwen2-VL-7B) |
+| **向量库** | ChromaDB |
+| **邮箱** | QQ邮箱 SMTP/IMAP |
 
-## **Features**  
+## 📁 项目结构
 
-### **Email Inbox Management with AI Agents**  
-
-- **Continuously monitors** the agency's Gmail inbox  
-- **Categorizes emails** into '**customer complaint**,' '**product inquiry**,' '**customer feedback**,' or '**unrelated**'  
-- **Automatically handles irrelevant emails** to maintain efficiency  
-
-### **AI Response Generation**  
-
-- **Quickly drafts emails** for customer complaints and feedback using **Langgraph**  
-- Utilizes **RAG techniques** to answer **product/service-related questions** accurately  
-- **Creates personalized email content** tailored to each customer's needs  
-
-### **Quality Assurance with AI**  
-
-- **Automatically checks** email **quality, formatting, and relevance**  
-- **Ensures every response** meets high standards before reaching the client  
-
-## **How It Works**  
-
-1. **Email Monitoring**: The system **constantly checks** for new emails in the agency's Gmail inbox using the **Gmail API**.  
-2. **Email Categorization**: **AI agents** sort each email into **predefined categories**.  
-3. **Response Generation**:   
-   - **For complaints or feedback**: The system **quickly drafts** a tailored email response.  
-   - **For service/product questions**: The system uses **RAG** to retrieve **accurate information** from agency documents and generates a response.  
-4. **Quality Assurance**: Each draft email undergoes **AI quality and formatting checks**.  
-5. **Sending**: **Approved emails** are sent to the client **promptly**, ensuring **timely communication**.  
-
-## System Flowchart
-
-This is the detailed flow of the system:
-
-[![](https://mermaid.ink/img/pako:eNqllEuP2jAQx7-KZa6AgAB5HFrxFlJBXbarIsIeTDwBi2CntrPAEr57TRIoW_Wwojk585_fvJLxCQeCAvZwGIl9sCFSox_9JUfm6fgTwZkWEo0mnfE3NOYrcXgtNFSpfEHd01jlZjTYxfr49Zyr3YuaTgWawt4ohEUqRQt_wCn6LkUASr3eOw5FYpQXTrjagwR6Q3p-j2hYC8neITcWXC_jXriEyDjQFHXv7b1EabEDiXpiF0eEcY1ME0MAuiLBNkV9_6dk2uidNXD9IaQpjyaBRgP-K2HymKKB_3zkegPqUsJTApKBQqEJN-uMCnKQzWLuj0CjTtYCCqXY3XnMM49_pu1n0tA3iUU4A0L_0odZWZ04luINUjTyn4HTD7PIPaamO4Vm8MYUE9z0mIujQjzonMkmlUtKHyMwHzJkUeSVQjcsKy3FFryS4zjFubJnVG-8RnwoByIS0ivVarV7vFvgq9Uf3LKsz-K9a_bV6hG8f80ePoQP_i_78DY69xF8VOBu-BA-v2Z_DF8UOKX08zguY7NW5j-i5sI4XcItsdmNHSyxZ46UyO0SL_nZ-JFEC7M5Afa0TKCMpUjWG-yFJFLmLYmp2ds-I2tJdjdrTDj2TviAvUbLrjYtt2G1XLdVr7XtZhkfjbnqNJyW4zZt17LdpuO0z2X8LoQJUau6rbbt2la7btmWW6s3s3iLTMxLAHq5zCb5dRcIHrI1Pv8GXQeX4g?type=png)](https://mermaid.live/edit#pako:eNqllEuP2jAQx7-KZa6AgAB5HFrxFlJBXbarIsIeTDwBi2CntrPAEr57TRIoW_Wwojk585_fvJLxCQeCAvZwGIl9sCFSox_9JUfm6fgTwZkWEo0mnfE3NOYrcXgtNFSpfEHd01jlZjTYxfr49Zyr3YuaTgWawt4ohEUqRQt_wCn6LkUASr3eOw5FYpQXTrjagwR6Q3p-j2hYC8neITcWXC_jXriEyDjQFHXv7b1EabEDiXpiF0eEcY1ME0MAuiLBNkV9_6dk2uidNXD9IaQpjyaBRgP-K2HymKKB_3zkegPqUsJTApKBQqEJN-uMCnKQzWLuj0CjTtYCCqXY3XnMM49_pu1n0tA3iUU4A0L_0odZWZ04luINUjTyn4HTD7PIPaamO4Vm8MYUE9z0mIujQjzonMkmlUtKHyMwHzJkUeSVQjcsKy3FFryS4zjFubJnVG-8RnwoByIS0ivVarV7vFvgq9Uf3LKsz-K9a_bV6hG8f80ePoQP_i_78DY69xF8VOBu-BA-v2Z_DF8UOKX08zguY7NW5j-i5sI4XcItsdmNHSyxZ46UyO0SL_nZ-JFEC7M5Afa0TKCMpUjWG-yFJFLmLYmp2ds-I2tJdjdrTDj2TviAvUbLrjYtt2G1XLdVr7XtZhkfjbnqNJyW4zZt17LdpuO0z2X8LoQJUau6rbbt2la7btmWW6s3s3iLTMxLAHq5zCb5dRcIHrI1Pv8GXQeX4g)
-
-## Tech Stack
-
-* Langchain & Langgraph: for developing AI agents workflow.
-* Langserve: simplify API development & deployment (using FastAPI).
-* Groq and Gemini APIs: for LLMs access.
-* Google Gmail API
-
-## How to Run
-
-### Prerequisites
-
-- Python 3.7+
-- Groq api key
-- Google Gemini api key (for embeddings)
-- Gmail API credentials
-- Necessary Python libraries (listed in `requirements.txt`)
-
-### Setup
-
-1. **Clone the repository:**
-
-   ```sh
-   git clone https://github.com/kaymen99/langgraph-email-automation.git
-   cd langgraph-email-automation
-   ```
-
-2. **Create and activate a virtual environment:**
-
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install the required packages:**
-
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-4. **Set up environment variables:**
-
-   Create a `.env` file in the root directory of the project and add your GMAIL address, we are using the Groq llama-3.1-70b model and the Google gemini embedding model so you must also get API keys to access them:
-
-   ```env
-   MY_EMAIL=your_email@gmail.com
-   GROQ_API_KEY=your_groq_api_key
-   GOOGLE_API_KEY=your_gemini_api_key
-   ```
-
-5. **Ensure Gmail API is enabled:**
-
-   Follow [this guide](https://developers.google.com/gmail/api/quickstart/python) to enable Gmail API and obtain your credentials.
-
-### Running the Application
-
-1. **Start the workflow:**
-
-   ```sh
-   python main.py
-   ```
-
-   The application will start checking for new emails, categorizing them, synthesizing queries, drafting responses, and verifying email quality.
-
-2. **Deploy as API:** you can deploy the workflow as an API using Langserve and FastAPI by running the command below:
-
-   ```sh
-   python deploy_api.py
-   ```
-
-   The workflow api will be running on `localhost:8000`, you can consult the API docs on `/docs` and you can use the langsergve playground (on the route `/playground`) to test it out.
-
-
-### Customization
-
-You can customize the behavior of each agent by modifying the corresponding methods in the `Nodes` class or the agents prompt `prompts` located in the `src` directory.
-
-You can also add your own agency data into the `data` folder, then you must create your own vector store by running (update first the data path):
-
-```sh
-python create_index.py
+```
+langgraph-email-automation/
+│
+├── 📄 根目录文件
+│   ├── backend_api.py          # 后端API服务（FastAPI）
+│   ├── main.py                  # 命令行单次运行
+│   ├── main_continuous.py      # 命令行持续监控
+│   ├── requirements.txt        # Python依赖
+│   ├── workflow.png             # 工作流示意图
+│   ├── README.md                # 项目说明文档
+│   └── .env                    # 环境变量配置（需创建）
+│
+├── 📁 src/                     # 后端核心代码
+│   ├── agents.py               # AI代理定义（LangChain）
+│   ├── graph.py                # LangGraph工作流定义
+│   ├── nodes.py                # 工作流节点实现
+│   ├── prompts.py              # 提示词模板
+│   ├── state.py                # 状态定义
+│   ├── structure_outputs.py    # 结构化输出定义
+│   └── tools/
+│       └── QQEmailTools.py     # QQ邮箱工具（IMAP/SMTP）
+│
+├── 📁 frontend/                # 前端项目（Vue 3）
+│   ├── src/
+│   │   ├── views/              # 页面组件
+│   │   ├── api/                # API接口封装
+│   │   ├── router/             # 路由配置
+│   │   ├── stores/             # 状态管理（Pinia）
+│   │   ├── utils/              # 工具函数
+│   │   └── styles/             # 样式文件
+│   ├── package.json
+│   └── vite.config.js
+│
+├── 📁 data/                    # 数据目录
+│   ├── agency.txt              # 知识库文档
+│   └── users/                  # 用户数据目录
+│       ├── user_data.json      # 用户账号数据
+│       ├── user_email_data_*.json  # 用户邮件历史
+│       └── username_mapping.json  # 用户名映射
+│
+├── 📁 db/                      # 向量数据库（ChromaDB，默认）
+├── 📁 db_1024/                 # 向量数据库（1024维）
+├── 📁 db_2560/                 # 向量数据库（2560维）
+└── 📁 db_4096/                 # 向量数据库（4096维）
+│
+├── 📁 docs/                    # 项目文档
+│   ├── README.md               # 文档索引
+│   ├── 使用文档.md             # 快速上手指南
+│   ├── 说明文档.md             # 完整技术文档
+│   └── ...                     # 其他文档
+│
+└── 📁 scripts/                 # 脚本目录
+    ├── start_all.bat           # 一键启动
+    ├── start_backend.bat       # 启动后端
+    ├── start_frontend.bat      # 启动前端
+    └── database/               # 数据库脚本
+        ├── create_index.py     # 创建向量索引（默认）
+        ├── create_index_1024.py # 创建1024维索引
+        ├── create_index_2560.py # 创建2560维索引
+        ├── create_index_4096.py # 创建4096维索引
+        └── clear_db.py         # 清理数据库
 ```
 
-### Contributing
+**详细目录说明请查看** [说明文档 - 项目目录结构](docs/说明文档.md#项目目录结构)
 
-Contributions are welcome! Please open an issue or submit a pull request for any changes.
+## 🚀 快速开始
 
-### Contact
+### 1. 安装依赖
 
-If you have any questions or suggestions, feel free to contact me at `aymenMir1001@gmail.com`.
+```bash
+# 后端依赖
+pip install -r requirements.txt
+
+# 前端依赖
+cd frontend
+npm install
+```
+
+### 2. 配置环境变量
+
+创建 `.env` 文件：
+
+```env
+# QQ邮箱配置
+MY_EMAIL=your_email@qq.com
+QQ_EMAIL_AUTH_CODE=your_auth_code
+
+# 硅基流动API
+SILICONFLOW_API_KEY=your_api_key
+```
+
+### 3. 创建向量索引
+
+```bash
+python scripts/database/create_index.py
+```
+
+**注意**：如果需要创建不同维度的向量索引，可以使用：
+- `scripts/database/create_index_1024.py` - 1024维
+- `scripts/database/create_index_2560.py` - 2560维
+- `scripts/database/create_index_4096.py` - 4096维
+
+### 4. 启动服务
+
+**方式一：一键启动（推荐）**
+```bash
+# Windows
+scripts\start_all.bat
+```
+
+**方式二：分别启动**
+```bash
+# 终端1 - 后端
+python backend_api.py
+
+# 终端2 - 前端
+cd frontend
+npm run dev
+```
+
+### 5. 访问系统
+
+- 🌐 **前端界面**: http://localhost:3000
+- 📡 **后端API**: http://localhost:8000
+- 📚 **API文档**: http://localhost:8000/docs
+
+**默认账号**: `admin` / `admin123`
+
+## 📖 运行模式
+
+| 模式 | 命令 | 说明 |
+|------|------|------|
+| **Web界面** | `python backend_api.py` + 前端 | 完整的Web管理界面 |
+| **单次运行** | `python main.py` | 处理当前未读邮件后结束 |
+| **持续监控** | `python main_continuous.py` | 每15分钟自动检查邮箱 |
+
+详细说明请查看 [docs/运行模式说明.md](docs/运行模式说明.md)
+
+## 📚 文档
+
+### 快速开始
+- 📖 **[使用文档](docs/使用文档.md)** ⭐ 推荐 - 简单精炼的快速上手指南
+- 🚀 **[快速开始](docs/快速开始.md)** - 详细的5分钟配置指南
+
+### 配置指南
+- ⚙️ **[配置说明](docs/配置说明.md)** - 完整的配置说明
+- 🔑 **[硅基流动配置指南](docs/硅基流动配置指南.md)** - API配置详解
+- 🎯 **[模型选择说明](docs/模型选择说明.md)** - 模型选择指南
+
+### 使用指南
+- 📖 **[运行模式说明](docs/运行模式说明.md)** - 三种运行模式详解
+
+### 技术文档
+- 📘 **[说明文档](docs/说明文档.md)** - 详细完整的技术文档（架构、API、部署等）
+
+### 项目历史
+- 📜 **[变更摘要](docs/变更摘要.md)** - 重大变更记录
+- 📝 **[更新日志](docs/更新日志.md)** - 版本更新历史
+
+**📋 [完整文档索引](docs/README.md)** - 查看所有文档的导航和分类  
+**📁 [文档结构说明](docs/文档结构说明.md)** - 了解文档组织方式
+
+## 🔧 配置说明
+
+### QQ邮箱授权码获取
+
+1. 登录 QQ邮箱网页版
+2. 进入 "设置" → "账户"
+3. 开启 "IMAP/SMTP服务"
+4. 生成授权码
+
+### 硅基流动API
+
+1. 访问 [硅基流动平台](https://siliconflow.cn/)
+2. 注册并登录
+3. 创建API密钥
+
+## 📝 更新日志
+
+查看 [docs/更新日志.md](docs/更新日志.md)
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📄 许可证
+
+MIT License

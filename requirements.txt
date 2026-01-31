@@ -1,13 +1,9 @@
 langchain-core
 langchain_community 
 langgraph 
-langchain-groq 
-langchain_google_genai
+langchain-openai
 langchain_chroma
-chromadb
-google-api-python-client
-google-auth-oauthlib
-google-auth-httplib2
+chromadb>=1.0.20,<2.0.0
 beautifulsoup4
 python-dotenv
 colorama
@@ -16,3 +12,7 @@ sse_starlette
 uvicorn
 gunicorn
 fastapi
+sentence-transformers
+torch
+openpyxl
+python-multipart

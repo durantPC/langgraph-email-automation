@@ -1,0 +1,148 @@
+{
+  "emails_cache": [
+    {
+      "id": "<tencent_934C9B4F9E63E4126A6ACFB839B9959CE006@qq.com>",
+      "threadId": "<tencent_934C9B4F9E63E4126A6ACFB839B9959CE006@qq.com>",
+      "messageId": "<tencent_934C9B4F9E63E4126A6ACFB839B9959CE006@qq.com>",
+      "references": "",
+      "sender": "3364236229@qq.com",
+      "subject": "产品咨询",
+      "body": "请问你们的产品有哪些功能，价格是多少",
+      "imap_id": "b'126'",
+      "time": "2025-12-07 22:57:08",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "请问你们的产品有哪些功能，价格是多少..."
+    }
+  ],
+  "history": [],
+  "activities": [
+    {
+      "time": "2025-12-07 22:57:08",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增1封，移除0封）"
+    },
+    {
+      "time": "2025-12-07 22:57:05",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:57:01",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:56:28",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:56:27",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:50",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:49",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:36",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:35",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:31",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:30",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:10",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 22:54:09",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:42:55",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:42:54",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:25",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:24",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:03",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 21:41:02",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    }
+  ],
+  "stats": {
+    "today_emails": 1,
+    "processed": 0,
+    "pending": 1,
+    "failed": 0,
+    "sent": 0
+  },
+  "last_check_time": "2025-12-07T22:57:08.135494",
+  "is_running": false,
+  "auto_process": false,
+  "check_interval": 900,
+  "last_save_time": "2025-12-07T22:57:42.628746"
+}

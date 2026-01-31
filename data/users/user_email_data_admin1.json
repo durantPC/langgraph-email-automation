@@ -1,0 +1,133 @@
+{
+  "emails_cache": [
+    {
+      "id": "<tencent_B939D4B59E5DF30B2B5A41A9B6D4BCDE4807@qq.com>",
+      "threadId": "<tencent_B939D4B59E5DF30B2B5A41A9B6D4BCDE4807@qq.com>",
+      "messageId": "<tencent_B939D4B59E5DF30B2B5A41A9B6D4BCDE4807@qq.com>",
+      "references": "",
+      "sender": "\"马金坤\" <3364236229@qq.com>",
+      "subject": "产品咨询",
+      "body": "请问你们的产品有哪些功能？价格是多少？",
+      "imap_id": "b'107'",
+      "time": "2025-12-06 21:05",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "请问你们的产品有哪些功能？价格是多少？..."
+    },
+    {
+      "id": "<tencent_24B2CD34CF2CF20A95B6C7DC5CCB8A495005@qq.com>",
+      "threadId": "<tencent_24B2CD34CF2CF20A95B6C7DC5CCB8A495005@qq.com>",
+      "messageId": "<tencent_24B2CD34CF2CF20A95B6C7DC5CCB8A495005@qq.com>",
+      "references": "",
+      "sender": "\"马金坤\" <3364236229@qq.com>",
+      "subject": "产品咨询",
+      "body": "请问你们的产品有哪些功能？价格是多少？",
+      "imap_id": "b'105'",
+      "time": "2025-12-06 21:05",
+      "status": "processed",
+      "category": "product_enquiry",
+      "reply": "Dear Customer,\n\nThank you for reaching out to us with your questions about our product features and pricing.\n\nOur AI agent development platform offers several powerful functionalities to help you build customized solutions:\n\n*   **Training with Your Own Data:** You can tailor agents using your own datasets and leverage retrieval augmented generation (RAG) for high customization and personalized client solutions.\n*   **Crafting Prompts:** Boost agent performance using templated prompts based on best practices and make adjustments with our prompt improvement system.\n*   **Access to Various Models:** We provide access to a diverse selection of open-source models like Llama3, Anthropic, Mistral, and Gemini Pro, allowing you to tailor your technology stack to your project's specific needs.\n\nRegarding pricing, I'd be happy to provide you with our current pricing details. Could you please let me know a bit more about your specific use case or project requirements? This will help me direct you to the most suitable pricing plan.\n\nWe look forward to helping you find the perfect solution!\n\nBest regards,\nThe Agentia Team",
+      "preview": "请问你们的产品有哪些功能？价格是多少？..."
+    },
+    {
+      "id": "<08c1e429-ed95-42b9-92c9-5a28236b2a54@mtasv.net>",
+      "threadId": "<08c1e429-ed95-42b9-92c9-5a28236b2a54@mtasv.net>",
+      "messageId": "<08c1e429-ed95-42b9-92c9-5a28236b2a54@mtasv.net>",
+      "references": "",
+      "sender": "Cursor <hi@cursor.com>",
+      "subject": "Welcome to Cursor!",
+      "body": "Hi adsfasd, Cursor is now active! Here are a few ways to get started: - Start typing and, when an autocomplete suggestion appears, press Tab to accept it - Highlight a selection of code and press Cmd/Ctrl+K to make an inline edit - Open Agent to make edits across multiple files - Run Agents from web & mobile - Use Bugbot to review your pull requests You can learn more in our docs or reach us with any questions on the forum Best, Cursor Team If you don't want to hear from us again, please let us know .",
+      "imap_id": "b'89'",
+      "time": "2025-12-06 21:05",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "Hi adsfasd, Cursor is now active! Here are a few ways to get started: - Start typing and, when an au..."
+    },
+    {
+      "id": "<cc9c5fbb-c7c6-45bf-b5a3-91f80797021d@mtasv.net>",
+      "threadId": "<cc9c5fbb-c7c6-45bf-b5a3-91f80797021d@mtasv.net>",
+      "messageId": "<cc9c5fbb-c7c6-45bf-b5a3-91f80797021d@mtasv.net>",
+      "references": "",
+      "sender": "Cursor <hi@cursor.com>",
+      "subject": "Couldn't process payment",
+      "body": "Hi adsfasd, Thank you for using Cursor! We've encountered an issue processing your subscription payment. You can address this by visiting the Billing & Invoices section in your dashboard . For reference, your account is registered with Google (3534196311@qq.com). If you need any help, reply to this email or reach out to us at hi@cursor.com . Best, Cursor Team",
+      "imap_id": "b'88'",
+      "time": "2025-12-06 21:05",
+      "status": "pending",
+      "category": "product_enquiry",
+      "reply": null,
+      "preview": "Hi adsfasd, Thank you for using Cursor! We've encountered an issue processing your subscription paym..."
+    }
+  ],
+  "history": [],
+  "activities": [
+    {
+      "time": "2025-12-07 12:09:48",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 12:09:31",
+      "type": "success",
+      "icon": "CircleCheck",
+      "content": "处理了邮件: 产品咨询"
+    },
+    {
+      "time": "2025-12-07 12:08:08",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 11:24:55",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 11:24:50",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-07 11:24:37",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增0封，移除2封）"
+    },
+    {
+      "time": "2025-12-06 21:06:23",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-06 21:06:00",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表"
+    },
+    {
+      "time": "2025-12-06 21:05:48",
+      "type": "info",
+      "icon": "Refresh",
+      "content": "刷新了邮件列表（新增6封，移除0封）"
+    }
+  ],
+  "stats": {
+    "today_emails": 0,
+    "processed": 1,
+    "pending": 3,
+    "failed": 0,
+    "sent": 0
+  },
+  "last_check_time": "2025-12-07T12:09:48.721953",
+  "is_running": false,
+  "auto_process": false,
+  "check_interval": 900,
+  "last_save_time": "2025-12-07T12:09:48.722010"
+}

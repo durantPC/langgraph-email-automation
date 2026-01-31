@@ -1,0 +1,468 @@
+{
+  "admin123": {
+    "password": "admin12345",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-21 00:16:07",
+        "current": true
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-20 21:50:44",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-20 12:55:40",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-19 22:00:07",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-19 18:21:03",
+        "current": false
+      }
+    ],
+    "email": "3534196311@qq.com",
+    "registerTime": "2025-12-06 10:03:32",
+    "preferences": {
+      "theme": "dark",
+      "notification": true,
+      "sound": true,
+      "defaultPage": "/history"
+    },
+    "lastLogin": "2025-12-21 00:16:07",
+    "user_id": "0d297ecf-665f-416e-a011-41a6ff897ec1",
+    "emailAuthCode": "wkenmxwzvvlwcjid",
+    "settings": {
+      "replyModel": "moonshotai/Kimi-K2-Thinking",
+      "embeddingModel": "Qwen/Qwen3-Embedding-4B",
+      "interval": 15,
+      "autoStart": false,
+      "autoSend": false,
+      "signature": "Agentia 团队",
+      "greeting": "尊敬的客户，您好！",
+      "closing": "祝好！"
+    }
+  },
+  "admin12": {
+    "password": "admin12",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-06 15:32:40",
+        "current": true
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-06 14:37:01",
+        "current": false
+      }
+    ],
+    "email": "",
+    "registerTime": "2025-12-06 14:36:53",
+    "preferences": {
+      "theme": "dark",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "lastLogin": "2025-12-06 15:32:40",
+    "user_id": "82b35f3f-18cd-498d-81b9-9068c00b7878"
+  },
+  "admin1": {
+    "password": "admin1",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-07 13:21:13",
+        "current": true
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-07 11:24:33",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-06 21:05:11",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-06 15:32:52",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-06 14:46:04",
+        "current": false
+      }
+    ],
+    "email": "3534196311@qq.com",
+    "registerTime": "2025-12-06 14:45:54",
+    "preferences": {
+      "theme": "light",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "lastLogin": "2025-12-07 13:21:13",
+    "emailAuthCode": "wkenmxwzvvlwcjid",
+    "settings": {
+      "apiKey": "sk-knkmvzxgpfjfqqffgohwzhduqwkgidsweygtjtdkawfydatl",
+      "model": "moonshotai/Kimi-K2-Thinking",
+      "interval": 15,
+      "autoStart": false,
+      "autoSend": false,
+      "signature": "Agentia 团队",
+      "greeting": "尊敬的客户，您好！",
+      "closing": "祝好！",
+      "replyModel": "deepseek-ai/DeepSeek-V3.1-Terminus",
+      "embeddingModel": "Qwen/Qwen3-Embedding-4B"
+    },
+    "user_id": "57fc612f-4947-4ed7-b629-c6c09025d619"
+  },
+  "admin12345": {
+    "password": "admin12345",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-06 14:46:56",
+        "current": true
+      }
+    ],
+    "email": "3534197551@qq.com",
+    "registerTime": "2025-12-06 14:46:48",
+    "preferences": {
+      "theme": "light",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "lastLogin": "2025-12-06 14:46:56",
+    "user_id": "fe2cb7ca-e6f9-443f-806a-be24843f1184"
+  },
+  "admin167676": {
+    "password": "addafadf",
+    "devices": [],
+    "email": "",
+    "registerTime": "2025-12-07 12:18:09",
+    "preferences": {
+      "theme": "light",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "user_id": "e80aaf34-6101-4bc1-8a2b-9ea069e4a19f"
+  },
+  "admin": {
+    "password": "admin123",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 138",
+        "ip": "127.0.0.1",
+        "time": "2026-01-06 20:51:46",
+        "current": true
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-27 18:15:56",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 143",
+        "ip": "127.0.0.1",
+        "time": "2025-12-27 16:54:28",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 143",
+        "ip": "127.0.0.1",
+        "time": "2025-12-27 14:37:41",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 138",
+        "ip": "127.0.0.1",
+        "time": "2025-12-27 13:16:47",
+        "current": false
+      }
+    ],
+    "preferences": {
+      "theme": "light",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "lastLogin": "2026-01-06 20:51:46",
+    "email": "3534196311@qq.com",
+    "emailAuthCode": "wkenmxwzvvlwcjid",
+    "settings": {
+      "apiKey": "sk-iwddzofwjanhdeecbyosphgalexemskbjwwrtvtydlsyxlva",
+      "model": "moonshotai/Kimi-K2-Thinking",
+      "interval": 15,
+      "autoStart": true,
+      "autoSend": false,
+      "signature": "企服通公司",
+      "greeting": "尊敬的先生，您好！",
+      "closing": "祝好！",
+      "replyModel": "Qwen/Qwen3-VL-32B-Thinking",
+      "embeddingModel": "Qwen/Qwen3-Embedding-4B",
+      "customModels": [
+        {
+          "id": "a0a94cee-48fb-4bf8-9005-9abf643669cc",
+          "provider": "硅基流动",
+          "model": "Qwen/Qwen3-VL-32B-Thinking",
+          "apiKey": "sk-izthwflghblpjkqniwoqrusbwmzunplhyeaukpjnpcbauvsa",
+          "type": "reply"
+        }
+      ],
+      "batchSize": 7,
+      "singleEmailConcurrency": 5,
+      "autoProcess": false
+    },
+    "user_id": "cb87265e-09bb-433f-94e6-2bf4164f11ab",
+    "chatHistory": [
+      {
+        "id": "conv_b76abc418cb1",
+        "title": "你叫什么名字",
+        "messages": [
+          {
+            "id": "msg_1766827602394_user",
+            "role": "user",
+            "content": "你叫什么名字",
+            "timestamp": "2025-12-27T09:26:42.394Z"
+          },
+          {
+            "id": "msg_1766827602794_assistant",
+            "role": "assistant",
+            "content": "我是 MailBot 智能助手，专门负责解答本邮件自动化系统的使用问题。😊",
+            "sources": [],
+            "timestamp": "2025-12-27T09:26:42.794Z"
+          }
+        ],
+        "messageCount": 2,
+        "createdAt": "2025-12-27T17:27:00.104747",
+        "updatedAt": "2025-12-27T17:27:00.104747"
+      },
+      {
+        "id": "conv_e9d54bb0fb8f",
+        "title": "如何接入邮箱账号？",
+        "messages": [
+          {
+            "id": "msg_1766827575703_user",
+            "role": "user",
+            "content": "如何接入邮箱账号？",
+            "timestamp": "2025-12-27T09:26:15.703Z"
+          },
+          {
+            "id": "msg_1766827580467_assistant",
+            "role": "assistant",
+            "content": "接入邮箱账号需要完成以下几个步骤：\n\n1. **选择邮箱类型**：\n   - QQ邮箱：需要使用授权码进行配置。\n   - 其他邮箱：一般需要IMAP/SMTP服务器设置，具体取决于邮箱提供商。\n\n2. **获取授权码或服务器设置信息**：\n   - 对于QQ邮箱，需要登录QQ邮箱设置页面，找到“授权码”或“POP3/SMTP服务”部分，获取授权码或相关服务器信息。\n   - 对于其他邮箱，访问邮箱官网，找到“设置”或“帐户”部分，找到IMAP/SMTP服务器设置。\n\n3. **配置邮箱账号**：\n   - 登录MailBot系统。\n   - 进入“邮箱管理”或“账号设置”页面，点击“添加邮箱”。\n   - 选择邮箱类型，根据所选邮箱类型输入相应的服务器地址、端口号、用户名和授权码等信息。\n   - 测试连接，确保邮箱账号配置正确。\n\n**示例**：\n- **QQ邮箱**：\n  - 服务器地址：smtp.qq.com\n  - 端口号：465（SSL加密）\n  - 用户名：您的QQ号\n  - 授权码：在QQ邮箱设置中获取的授权码\n  - 测试连接，点击“保存”并确认是否成功。\n\n- **其他邮箱**（以Gmail为例）：\n  - 服务器地址：imap.gmail.com\n  - 端口号：993（SSL加密）\n  - 用户名：您的Gmail邮箱地址\n  - 密码：您的Gmail邮箱密码\n  - 测试连接，点击“保存”并确认是否成功。\n\n如果您在操作过程中遇到任何问题，可以随时联系我，我会尽力帮助您！😊",
+            "sources": [],
+            "timestamp": "2025-12-27T09:26:20.467Z"
+          }
+        ],
+        "messageCount": 2,
+        "createdAt": "2025-12-27T17:26:26.229122",
+        "updatedAt": "2025-12-27T17:26:26.229122"
+      }
+    ]
+  },
+  "admin456": {
+    "password": "admin456",
+    "user_id": "0c1c7dd3-8b02-4bc6-9ac4-5793b1c0ed53",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-08 00:04:53",
+        "current": true
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-08 00:03:02",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-07 23:57:46",
+        "current": false
+      }
+    ],
+    "email": "",
+    "registerTime": "2025-12-07 23:57:27",
+    "preferences": {
+      "theme": "dark",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "lastLogin": "2025-12-08 00:04:53"
+  },
+  "lym123": {
+    "password": "lym123",
+    "user_id": "eb8746eb-151b-442c-b8c3-19f4683e6aa9",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 138",
+        "ip": "127.0.0.1",
+        "time": "2025-12-27 20:56:14",
+        "current": true
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-27 20:15:44",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Edge",
+        "ip": "127.0.0.1",
+        "time": "2025-12-27 18:17:20",
+        "current": false
+      }
+    ],
+    "email": "3083714029@qq.com",
+    "registerTime": "2025-12-27 18:17:05",
+    "preferences": {
+      "theme": "light",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "lastLogin": "2025-12-27 20:56:14",
+    "emailAuthCode": "thxtsrjwbefhdhad",
+    "settings": {
+      "replyModel": "Qwen/Qwen3-VL-32B-Thinking",
+      "embeddingModel": "Qwen/Qwen3-Embedding-4B",
+      "interval": 15,
+      "autoProcess": false,
+      "autoSend": false,
+      "singleEmailConcurrency": 4,
+      "batchSize": 4,
+      "signature": "Agentia 团队",
+      "greeting": "尊敬的客户，您好！",
+      "closing": "祝好！"
+    }
+  },
+  "dpc": {
+    "password": "123456",
+    "user_id": "71cecef1-bb6f-4fa1-b629-4c4c7736d0d4",
+    "devices": [
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 143",
+        "ip": "127.0.0.1",
+        "time": "2026-01-07 23:18:46",
+        "current": true
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 143",
+        "ip": "127.0.0.1",
+        "time": "2026-01-06 21:00:01",
+        "current": false
+      },
+      {
+        "device": "Windows PC",
+        "browser": "Chrome 138",
+        "ip": "127.0.0.1",
+        "time": "2026-01-06 20:57:25",
+        "current": false
+      }
+    ],
+    "email": "3489129374@qq.com",
+    "registerTime": "2026-01-06 20:57:18",
+    "preferences": {
+      "theme": "light",
+      "notification": true,
+      "sound": false,
+      "defaultPage": "/dashboard"
+    },
+    "lastLogin": "2026-01-07 23:18:46",
+    "emailAuthCode": "fxkegcxgkdmkchje",
+    "settings": {
+      "replyModel": "Qwen/Qwen3-VL-32B-Thinking",
+      "embeddingModel": "Qwen/Qwen3-Embedding-8B",
+      "interval": 15,
+      "autoProcess": false,
+      "autoSend": false,
+      "singleEmailConcurrency": 4,
+      "batchSize": 4,
+      "signature": "Agentia 团队",
+      "greeting": "尊敬的客户，您好！",
+      "closing": "祝好！"
+    },
+    "chatHistory": [
+      {
+        "id": "conv_9ed09f493cab",
+        "title": "处理失败怎么排查？",
+        "messages": [
+          {
+            "id": "msg_1767705523166_user",
+            "role": "user",
+            "content": "处理失败怎么排查？",
+            "timestamp": "2026-01-06T13:18:43.166Z"
+          },
+          {
+            "id": "msg_1767705528510_assistant",
+            "role": "assistant",
+            "content": "处理失败时，您可以按照以下步骤进行排查：\n\n1. **检查错误日志**：\n   - 查看系统提供的错误日志，通常会记录失败的原因。日志中会显示具体的错误信息和操作步骤，帮助定位问题。\n\n2. **检查邮件配置**：\n   - 确认邮箱账号的IMAP/SMTP设置是否正确。特别是授权码、服务器地址、端口号等重要信息。\n   - 测试邮件连接，确保能够成功访问邮箱。\n\n3. **确认系统设置**：\n   - 检查系统设置中的API配置、模型选择、监控间隔等参数是否配置正确。\n   - 确认自动发送功能的设置是否符合预期，比如邮件分类、回复生成规则等。\n\n4. **检查网络连接**：\n   - 确认网络连接是否稳定，尤其是如果系统需要通过网络访问第三方服务（如邮件服务器）时。\n   - 检查防火墙或安全软件设置，确保没有阻止系统访问必要的网络资源。\n\n5. **查看历史记录**：\n   - 查看历史处理记录，特别是最近的处理记录，寻找可能的异常情况。\n   - 如果系统支持导出功能，导出历史记录，进行详细检查。\n\n6. **咨询技术支持**：\n   - 如果以上步骤都无法解决问题，可以联系技术支持团队，提供详细的错误日志和操作步骤，以便他们能够更准确地帮助您解决问题。\n\n通过这些步骤，您应该能够找到处理失败的原因并加以解决。如果需要进一步的帮助，请随时联系我！😊",
+            "sources": [],
+            "timestamp": "2026-01-06T13:18:48.510Z"
+          }
+        ],
+        "messageCount": 2,
+        "createdAt": "2026-01-07T13:37:57.406719",
+        "updatedAt": "2026-01-07T13:37:57.406719"
+      }
+    ]
+  }
+}
